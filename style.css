@@ -1,9 +1,41 @@
-li {
-  list-style: none;
+/* Loading Block */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s;
+  background-color: #0bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
-a {
-  text-decoration: none;
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  /* animation: sk-scaleout 1.0s infinite ease-in-out; */
+  animation: sk-scaleout 1.0s ease infinite normal
+}
+
+/* Loading Animation */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* Hide Loading Block */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* ハンバーガーメニュー */
@@ -14,7 +46,7 @@ a {
   width: 60px;
   height: 60px;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 999;
   border-radius: 20%;
 }
 
