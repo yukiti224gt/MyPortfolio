@@ -142,18 +142,18 @@ section:nth-child(1) {
   height: 100vh;
 }
 
-#profile {
+#home {
   position: absolute;
   top: 40%;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 400px;
-  height: 300px;
+  width: 50vw;
+  height: 40vh;
   margin: 0 auto;
   text-align: center;
 }
 
-#profile h2 {
-  font-size: 14px;
+#home h2 {
+  font-size: 10px;
 }
