@@ -2,7 +2,7 @@
 #loading {
   width: 100vw;
   height: 100vh;
-  transition: all 2s;
+  transition: all 3s;
   background-color: #0bd;
   position: fixed;
   top: 0;
@@ -48,11 +48,11 @@
   margin: 0 auto;
   z-index: 999;
   border-radius: 20%;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .ham_line {
@@ -92,9 +92,9 @@
 
 .menu {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  top: -800px;
+  width: 100vw;
+  height: 100vh;
+  top: -999px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -109,4 +109,42 @@
 
 .menu a {
   color: #FFFFFF;
+}
+
+/* main */
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+
+/* profile */
+section:nth-child(1) {
+  width: 100vw;
+  height: 100vh;
+}
+
+#profile {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
 }
