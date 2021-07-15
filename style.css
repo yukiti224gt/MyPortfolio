@@ -100,7 +100,8 @@
   bottom: 0;
   background-color: #000000;
   transition: all 0.5s;
-  opacity: 0.5
+  opacity: 0.5;
+  z-index: 998;
 }
 
 .clicked .menu {
@@ -109,6 +110,12 @@
 
 .menu a {
   color: #FFFFFF;
+  border: none;
+}
+
+/* body */
+body {
+  margin: 0;
 }
 
 /* main */
@@ -138,17 +145,33 @@ a:hover {
 }
 
 /* section毎のいろ */
-section:nth-child(1) {
+section {
   width: 100vw;
   height: 100vh;
+  position: relative;
+}
+
+section:nth-child(1) {
   background-color: #CCFFFF;
 }
 
 section:nth-child(2) {
-  width: 100vw;
-  height: 100vh;
   background-color: #CCFFCC;
 }
+
+section:nth-child(3) {
+  background-color: #CCFFFC;
+}
+
+
+/* ↓について */
+.bottom_link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 
 /* home */
 #home {
@@ -157,8 +180,8 @@ section:nth-child(2) {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 50vw;
-  height: 40vh;
+  width: 60vw;
+  height: 50vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -168,6 +191,17 @@ section:nth-child(2) {
 }
 
 /* about */
+#about {
+  position: absolute;
+  width: 60vw;
+  height: 40vh;
+  margin: 0 auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 #about h2 {
   margin: 0;
 }
@@ -175,7 +209,6 @@ section:nth-child(2) {
 /* footer */
 #footer {
   margin: 0;
-  background-color: #FFFFCC;
   height: 200px;
   width: 100vw;
   text-align: center;
