@@ -118,12 +118,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body */
-body {
-  margin: 0;
-}
-
-/* main */
 li {
   list-style: none;
 }
@@ -147,6 +141,19 @@ a:hover {
 
 .container {
   display: flex;
+}
+
+.box {
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 6px -2px #555,
+    3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+  border-radius: 2%;
+
+}
+
+/* body */
+body {
+  margin: 0;
 }
 
 /* section毎のいろ */
@@ -182,26 +189,25 @@ section:first-child>div {
 
 section:not(:first-child)>div {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 60vw;
-  height: 50vh;
+  width: 70vw;
+  height: 60vh;
   margin: 0 auto;
+  padding: 20px;
 }
-
 
 section:not(:first-child)>div>h2 {
   margin: 0;
-
 }
 
 
 /* ↓について */
 .bottom_link {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
@@ -224,13 +230,14 @@ section:not(:first-child)>div>h2 {
 
 /* footer */
 #footer {
+  background-color: #0bd;
   margin: 0;
-  height: 200px;
+  height: 50px;
   width: 100vw;
   text-align: center;
 }
 
 #footer p {
-  line-height: 200px;
+  line-height: 50px;
   margin: 0;
 }
