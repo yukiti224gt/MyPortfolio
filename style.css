@@ -204,10 +204,15 @@ section:not(:first-child)>div>h2 {
 
 
 /* home */
-.home {}
-
 .home h2 {
   font-size: 0.8rem;
+}
+
+.profile_info {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
 }
 
 /* about */
