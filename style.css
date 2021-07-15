@@ -202,7 +202,7 @@ section:nth-child(3) {
   bottom: 0;
 }
 
-#about h2 {
+section:not(:first-child)>div>h2 {
   margin: 0;
 }
 

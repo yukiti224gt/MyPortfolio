@@ -21,7 +21,7 @@ const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
       let targetElement = document.getElementById(href.replace('#', ''));
       const rect = targetElement.getBoundingClientRect().top;
       const offset = window.pageYOffset;
-      const gap = 60;
+      const gap = 300;
       const target = rect + offset - gap;
       window.scrollTo({
         top: target,
