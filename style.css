@@ -137,12 +137,20 @@ a:hover {
   display: flex;
 }
 
-/* home */
+/* section毎のいろ */
 section:nth-child(1) {
   width: 100vw;
   height: 100vh;
+  background-color: #CCFFFF;
 }
 
+section:nth-child(2) {
+  width: 100vw;
+  height: 100vh;
+  background-color: #CCFFCC;
+}
+
+/* home */
 #home {
   position: absolute;
   top: 40%;
@@ -160,21 +168,20 @@ section:nth-child(1) {
 }
 
 /* about */
-.box {
-  width: 100vw;
-  height: 100vh;
+#about h2 {
+  margin: 0;
 }
-
 
 /* footer */
 #footer {
   margin: 0;
-  background-color: aqua;
+  background-color: #FFFFCC;
   height: 200px;
   width: 100vw;
   text-align: center;
 }
 
 #footer p {
-  line-height: 200px
+  line-height: 200px;
+  margin: 0;
 }
