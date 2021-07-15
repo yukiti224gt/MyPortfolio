@@ -113,6 +113,11 @@
   border: none;
 }
 
+/* 全体 */
+html {
+  scroll-behavior: smooth;
+}
+
 /* body */
 body {
   margin: 0;
@@ -163,18 +168,7 @@ section:nth-child(3) {
   background-color: #CCFFFC;
 }
 
-
-/* ↓について */
-.bottom_link {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-
-/* home */
-#home {
+section:first-child>div {
   position: absolute;
   top: 40%;
   left: 0;
@@ -186,25 +180,47 @@ section:nth-child(3) {
   text-align: center;
 }
 
-#home h2 {
-  font-size: 0.8rem;
-}
-
-/* about */
-#about {
+section:not(:first-child)>div {
   position: absolute;
-  width: 60vw;
-  height: 40vh;
-  margin: 0 auto;
   top: 40%;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 60vw;
+  height: 50vh;
+  margin: 0 auto;
 }
+
 
 section:not(:first-child)>div>h2 {
   margin: 0;
+
 }
+
+
+/* ↓について */
+.bottom_link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
+/* home */
+.home {}
+
+.home h2 {
+  font-size: 0.8rem;
+}
+
+/* about */
+.about {}
+
+/* technology */
+.background {}
+
 
 /* footer */
 #footer {
