@@ -147,13 +147,13 @@ a:hover {
   background-color: whitesmoke;
   box-shadow: 3px 3px 6px -2px #555,
     3px 3px 8px rgba(255, 255, 255, 0.8) inset;
-  border-radius: 2%;
-
+  border-radius: 10px;
 }
 
 /* body */
 body {
   margin: 0;
+  background-color: #006400;
 }
 
 /* section毎のいろ */
@@ -163,27 +163,16 @@ section {
   position: relative;
 }
 
-section:nth-child(1) {
-  background-color: #CCFFFF;
-}
-
-section:nth-child(2) {
-  background-color: #CCFFCC;
-}
-
-section:nth-child(3) {
-  background-color: #CCFFFC;
-}
-
 section:first-child>div {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 60vw;
-  height: 50vh;
+  width: 70vw;
+  height: 60vh;
   margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
@@ -230,7 +219,6 @@ section:not(:first-child)>div>h2 {
 
 /* footer */
 #footer {
-  background-color: #0bd;
   margin: 0;
   height: 50px;
   width: 100vw;
