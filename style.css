@@ -115,6 +115,7 @@
 
 /* 全体 */
 html {
+  font-family: Chalk-Hand-Lettering;
   scroll-behavior: smooth;
 }
 
@@ -216,17 +217,13 @@ section:not(:first-child)>div>h2 {
 }
 
 /* about */
-.about {}
 
 /* technology */
-.background {}
-
 
 /* footer */
 #footer {
   margin: 0;
   height: 50px;
-  width: 100vw;
   text-align: center;
 }
 
