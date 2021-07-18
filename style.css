@@ -224,10 +224,21 @@ section:not(:first-child)>div>h2 {
 
 /* about */
 
-/* technology */
-.technology img {
+/* sns */
+.sns {
   width: 100px;
+}
 
+
+.sns .child {
+  display: inline-block;
+  width: 24%;
+  white-space: normal;
+  border: 1px solid black;
+}
+
+.sns img {
+  width: 100%;
 }
 
 /* footer */
