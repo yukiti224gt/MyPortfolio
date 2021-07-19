@@ -304,6 +304,24 @@ section:not(:first-child)>div>h2 {
   font-size: 1.5rem;
 }
 
+/* background */
+.background p {
+  line-height: 20px;
+}
+
+.bar:nth-child(2) {
+  margin-bottom: 15px;
+  box-shadow: 0 0 4px 4px #dc143c,
+    0 0 4px 4px #dc143c inset;
+  padding: 4px;
+}
+
+.bar:nth-child(3) {
+  box-shadow: 0 0 4px 4px #4169e1,
+    0 0 4px 4px #4169e1 inset;
+  padding: 4px;
+}
+
 /* sns */
 .sns .child {
   height: 22%;
