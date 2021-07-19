@@ -210,6 +210,58 @@ section:not(:first-child)>div>h2 {
   border: solid 3px black;
 }
 
+/* 跳ねる */
+.jump_down {
+  animation: arrowmove_down 1.5s ease-in-out infinite;
+}
+
+.jump_up {
+  animation: arrowmove_up 1.5s ease-in-out infinite;
+}
+
+
+@keyframes arrowmove_down {
+  0% {
+    bottom: 3%;
+  }
+
+  50% {
+    bottom: 6%;
+  }
+
+  100% {
+    bottom: 3%;
+  }
+}
+
+@keyframes arrowmove_up {
+  0% {
+    bottom: 6%;
+  }
+
+  50% {
+    bottom: 3%;
+  }
+
+  100% {
+    bottom: 6%;
+  }
+}
+
+
+/* フェードインのアニメーション */
+.animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(60px);
+  transition: all 1s;
+}
+
+.animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
 
 /* home */
 .home h1 {
