@@ -35,7 +35,6 @@ function showElementAnimation() {
 showElementAnimation();
 window.addEventListener('scroll', showElementAnimation);
 
-
 //スムーススクロール
 function smoothScrollTrigger() {
   const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
