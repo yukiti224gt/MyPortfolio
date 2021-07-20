@@ -43,12 +43,10 @@
     <section id="about">
       <div class="about box animation">
         <div class="content ">
-          <dl><h2>ーどんな人？ー</h2></dl>
-          <dd>
-            <p>身近にある小さな問題をICT技術で解決することがモットー</p>
-            <p>趣味は音楽、開発、料理</p>
-            <p>コードを弾く、コードを書くことが好き</p>
-          </dd>
+          <h2>ーどんな人？ー</h2>
+          <p>身近にある小さな問題をICT技術で解決することがモットー</p>
+          <p>趣味は音楽、開発、料理</p>
+          <p>コードを弾く、コードを書くことが好き</p>
         </div>
         <div class="bottom_link jump_down">
           <a href="#background">↓</a>
@@ -91,8 +89,20 @@
   </main>
 
   <footer id="footer">
-      <p class=><img class="hand_frame" src="img/profile.png" alt="チョーク文字です。"></p> 
-      <p>©︎Largo</p>     
+    <!--ポップアップ -->
+    <div class="popup_wrap">
+      <input id="trigger" type="checkbox">
+      <div class="popup_overlay">
+        <label for="trigger" class="popup_trigger"></label>
+        <div class="popup_content">
+            <label for="trigger" class="close_btn">×</label>
+            <p>ここにポップアップウィンドウの中身を入れます。画像も入りますし、動画も入ります。</p>
+        </div>
+      </div>  
+    </div>
+    
+    <label for="trigger" class="open_btn"><img class="hand_frame" src="img/profile.png" alt="チョーク文字です。"></label>
+    <p>©︎Largo</p>     
   </footer>
 
 <script type="text/javascript" src="index.js"></script>
