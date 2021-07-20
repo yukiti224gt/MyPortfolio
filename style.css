@@ -467,7 +467,7 @@ section:not(:first-child)>div>h2 {
 .marker {
   background: linear-gradient(transparent 0%, #fff799 0%);
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 @media screen and (max-width:480px) {
