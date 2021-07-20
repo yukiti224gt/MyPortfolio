@@ -94,7 +94,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  top: -999px;
+  top: -150rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -117,6 +117,9 @@
 /* 全体 */
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
 }
 
 li {
@@ -277,11 +280,11 @@ section:not(:first-child)>div>h2 {
 
 /* home */
 .home h1 {
-  font-size: 2.5rem;
+  font-size: 4.0rem;
 }
 
 .home h2 {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
 }
 
 .profile_info {
@@ -297,11 +300,12 @@ section:not(:first-child)>div>h2 {
 }
 
 .content h2 {
-  font-size: 2.0rem;
+  font-size: 3.0rem;
+  text-align: center;
 }
 
 .content p {
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 
 /* background */
@@ -312,6 +316,7 @@ section:not(:first-child)>div>h2 {
 .background p {
   line-height: 20px;
   padding-left: 24px;
+  margin: 10px 0;
 }
 
 .bar {
@@ -345,6 +350,7 @@ section:not(:first-child)>div>h2 {
   border: none;
   border-radius: 0%;
   padding: 0;
+  font-size: 2.0rem;
 }
 
 .sns a.child:hover {
@@ -418,6 +424,7 @@ section:not(:first-child)>div>h2 {
   border-radius: 10px;
   line-height: 1.4em;
   transition: 0.5s;
+  font-size: 1.4rem;
 }
 
 .close_btn {
@@ -450,4 +457,10 @@ section:not(:first-child)>div>h2 {
   background: linear-gradient(transparent 0%, #fff799 0%);
   font-weight: bold;
   border-radius: 6px;
+}
+
+@media screen and (max-width:480px) {
+  .content {
+    padding: 0;
+  }
 }
