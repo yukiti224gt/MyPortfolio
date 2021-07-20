@@ -116,6 +116,7 @@
 
 /* 全体 */
 html {
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 100%;
   font-size: 62.5%;
