@@ -315,13 +315,24 @@ section:not(:first-child)>div>h2 {
 
 .background p {
   line-height: 20px;
-  padding-left: 24px;
+  padding-left: 12px;
   margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.background p:nth-child(1) {
+  width: 29%;
+}
+
+.background p:nth-child(2) {
+  width: 70%;
 }
 
 .bar {
   padding: 4px;
   border-radius: 10px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .bar:nth-child(2) {
