@@ -415,6 +415,7 @@ section:not(:first-child)>div>h2 {
   padding: 30px 30px 15px;
   box-sizing: border-box;
   background: #fff;
+  border-radius: 10px;
   line-height: 1.4em;
   transition: 0.5s;
 }
