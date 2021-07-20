@@ -444,3 +444,10 @@ section:not(:first-child)>div>h2 {
   opacity: .5;
   transition: .3s ease;
 }
+
+/* マーカー */
+.marker {
+  background: linear-gradient(transparent 0%, #fff799 0%);
+  font-weight: bold;
+  border-radius: 6px;
+}
