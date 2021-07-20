@@ -16,7 +16,7 @@ window.onload = function () {
 function showElementAnimation() {
   let element = document.getElementsByClassName('animation');
   if (!element) return;
-  
+
   let showTiming = window.innerHeight > 768 ? 200 : 40;
   let scrollY = window.pageYOffset;
   let windowH = window.innerHeight;
@@ -34,3 +34,25 @@ function showElementAnimation() {
 }
 showElementAnimation();
 window.addEventListener('scroll', showElementAnimation);
+
+
+//スムーススクロール
+function smoothScrollTrigger() {
+  const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
+    for (let i = 0; i < smoothScrollTrigger.length; i++){
+      smoothScrollTrigger[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        let href = smoothScrollTrigger[i].getAttribute('href');
+        let targetElement = document.getElementById(href.replace('#', ''));
+        const rect = targetElement.getBoundingClientRect().top;
+        const offset = window.pageYOffset;
+        const gap = 20;
+        const target = rect + offset - gap;
+        window.scrollTo({
+          top: target,
+          behavior: 'smooth',
+        });
+      });
+    }
+}
+smoothScrollTrigger();
