@@ -104,6 +104,7 @@
   transition: all 0.5s;
   opacity: 0.7;
   z-index: 998;
+
 }
 
 .clicked .menu {
@@ -118,6 +119,7 @@
   left: 0;
   right: 0;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .menu a {
@@ -340,7 +342,7 @@ section:not(:first-child)>div>h2 {
 }
 
 .background p:nth-child(1) {
-  width: 29%;
+  width: 32%;
 }
 
 .background p:nth-child(2) {
@@ -492,5 +494,14 @@ section:not(:first-child)>div>h2 {
 @media screen and (max-width:480px) {
   .content {
     padding: 0;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  .background p {
+    line-height: 13px;
+    margin: 9px 0;
   }
 }
