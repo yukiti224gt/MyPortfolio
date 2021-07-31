@@ -203,12 +203,12 @@ section {
 
 section:first-child>div {
   position: absolute;
-  top: 20%;
+  top: 8%;
   left: 0;
   right: 0;
   bottom: 0;
   width: 70vw;
-  height: 60vh;
+  height: 80vh;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -216,12 +216,12 @@ section:first-child>div {
 
 section:not(:first-child)>div {
   position: absolute;
-  top: 20%;
+  top: 8%;
   left: 0;
   right: 0;
   bottom: 0;
   width: 70vw;
-  height: 60vh;
+  height: 80vh;
   margin: 0 auto;
   padding: 20px;
 }
