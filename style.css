@@ -137,6 +137,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: 62.5%;
+
 }
 
 li {
@@ -301,18 +302,20 @@ section:not(:first-child)>div>h2 {
 
 /* home */
 .home h1 {
-  font-size: 3.5rem;
+  font-size: 7.0rem;
 }
 
 .home h2 {
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 
 .profile_info {
   position: absolute;
-  top: 30%;
+  top: 25vh;
   right: 0;
   left: 0;
+  bottom: 0;
+
 }
 
 /* contentについて */
@@ -321,12 +324,12 @@ section:not(:first-child)>div>h2 {
 }
 
 .content h2 {
-  font-size: 3.0rem;
+  font-size: 4.0rem;
   text-align: center;
 }
 
 .content p {
-  font-size: 2.0rem;
+  font-size: 2.6rem;
 }
 
 /* background */
@@ -335,14 +338,14 @@ section:not(:first-child)>div>h2 {
 }
 
 .background p {
-  line-height: 20px;
-  padding-left: 12px;
+  line-height: 2.4rem;
+  padding: 0 12px;
   margin: 10px 0;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
 }
 
 .background p:nth-child(1) {
-  width: 32%;
+  width: 28%;
 }
 
 .background p:nth-child(2) {
@@ -492,6 +495,10 @@ section:not(:first-child)>div>h2 {
 }
 
 @media screen and (max-width:480px) {
+  html {
+    font-size: 49.0%;
+  }
+
   .content {
     padding: 0;
   }
@@ -501,7 +508,42 @@ section:not(:first-child)>div>h2 {
   }
 
   .background p {
-    line-height: 13px;
-    margin: 9px 0;
+    margin: 0;
   }
+
+  .background .container {
+    flex-direction: column;
+  }
+
+  .background p:nth-child(1) {
+    width: 100%;
+  }
+
+  .background p:nth-child(2) {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+  html {
+    font-size: 72.5%;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  .background p {
+    margin: 0;
+  }
+
+  .background .container {
+    flex-direction: column;
+  }
+
 }
